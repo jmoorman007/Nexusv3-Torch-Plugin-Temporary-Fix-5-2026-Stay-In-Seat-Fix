@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<PluginManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>NexusSeatFix</Name>
+  <Guid>7a7fadce-3a91-4d3e-9b16-ab9c0e3f7e51</Guid>
+  <Version>1.1.0</Version>
+</PluginManifest>

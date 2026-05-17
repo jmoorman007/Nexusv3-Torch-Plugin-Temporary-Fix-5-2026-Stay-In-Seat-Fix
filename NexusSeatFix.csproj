@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NexusSeatFix</RootNamespace>
+    <AssemblyName>NexusSeatFix</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <Deterministic>true</Deterministic>
+    <Version>1.1.0</Version>
+
+    <!-- WPF UserControl for the Torch plugin manager UI. -->
+    <UseWPF>true</UseWPF>
+
+    <!--
+      Adjust these two if your folders live somewhere else. They default to the
+      sibling "TorchAPI Files" folder produced when you unzipped the Torch SDK
+      and the Nexus Global plugin in this repo.
+    -->
+    <TorchApiDir>$(MSBuildThisFileDirectory)..\TorchAPI Files</TorchApiDir>
+    <SeBinDir>$(MSBuildThisFileDirectory)..\TorchAPI Files\DedicatedServer64</SeBinDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Torch -->
+    <Reference Include="Torch">
+      <HintPath>$(TorchApiDir)\Torch.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Torch.API">
+      <HintPath>$(TorchApiDir)\Torch.API.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Harmony - copy 0Harmony.dll from the Nexus Global zip into TorchAPI Files
+         (or wherever you prefer) so this HintPath resolves. -->
+    <Reference Include="0Harmony">
+      <HintPath>$(TorchApiDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- NLog - shipped with Torch -->
+    <Reference Include="NLog">
+      <HintPath>$(TorchApiDir)\NLog.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Space Engineers assemblies -->
+    <Reference Include="Sandbox.Game">
+      <HintPath>$(SeBinDir)\Sandbox.Game.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Sandbox.Common">
+      <HintPath>$(SeBinDir)\Sandbox.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders">
+      <HintPath>$(SeBinDir)\SpaceEngineers.ObjectBuilders.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage">
+      <HintPath>$(SeBinDir)\VRage.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Game">
+      <HintPath>$(SeBinDir)\VRage.Game.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Math">
+      <HintPath>$(SeBinDir)\VRage.Math.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>$(SeBinDir)\VRage.Library.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Include the manifest as a build output sibling so plugins/ can be zipped directly. -->
+    <None Include="manifest.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

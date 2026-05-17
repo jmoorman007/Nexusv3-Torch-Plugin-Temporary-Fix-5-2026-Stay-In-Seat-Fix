@@ -1,0 +1,10 @@
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\bin\Release\manifest.xml
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\bin\Release\NexusSeatFix.dll
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\bin\Release\NexusSeatFix.pdb
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.csproj.AssemblyReference.cache
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.AssemblyInfoInputs.cache
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.AssemblyInfo.cs
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.csproj.CoreCompileInputs.cache
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.dll
+C:\Users\jmoor\OneDrive\Documents\Claude Code\Space Engineers Spawning - Fixing Nexus\NexusSeatFix\obj\Release\NexusSeatFix.pdb
